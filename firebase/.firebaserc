@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "dev-company-f4724",
+    "Dev Company": "dev-company-f4724"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}

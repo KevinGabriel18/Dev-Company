@@ -1,0 +1,373 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(244, 153, 62, 0.87);
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    padding: 0;
+    z-index: 1000;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+
+ul {
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+}
+
+.lista_menu li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 49px;
+    display: block;
+
+}
+
+
+#logo {
+    width: 200px;
+    height: auto;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(244, 153, 62);
+    width: 100%;
+    overflow: hidden;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    padding: 0;
+}
+
+.saibamais {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 170px;
+    margin-left: 100px;
+
+}
+
+#fundo_saibamais {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#fundo_macbook {
+    display: flex;
+    flex: 1;
+    margin-left: 200px;
+}
+
+#macbook {
+    display: flex;
+    width: 75%;
+    height: auto;
+}
+
+#macbook:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+
+
+}
+
+#contato_botao {
+    background-color: rgb(221, 139, 17);
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    text-align: center;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 150px;
+    height: 40px;
+
+    margin-top: 25px;
+}
+
+#contato_botao:hover {
+
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.fazemos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Duas colunas de tamanho igual */
+    gap: 20px;
+    justify-content: center;
+    padding: 50px 0;
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.tipos {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid rgb(221, 139, 17);
+    padding: 20px;
+
+}
+
+#fazemoss {
+    text-align: center;
+    margin-top: 150px;
+
+
+
+}
+
+.catalogo {
+    margin-top: 40px;
+    padding: 80px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.catalogo h1 {
+    text-align: center;
+}
+
+.projetos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.projeto {
+    border: 1px solid gray;
+    background-color: #fff;
+    height: 90%;
+    ;
+    width: 90%;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.projeto img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+.projeto h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.projeto p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+#nosso_projeto {
+    text-align: center;
+    margin-top: 70px;
+}
+
+#contatos {
+    display: flex;
+    margin-top: 70px;
+}
+
+.container-contatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    background-color: #ffc289;
+    width: 800px;
+    height: 300px;
+    margin-left: 23%;
+    border-radius: 70px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 100px;
+
+}
+
+.separar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: -160px;
+
+}
+
+#container-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    width: 300px;
+    height: 100px;
+    margin-left: 35%;
+    border-radius: 70px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#container-contato p {
+    margin: 10px;
+    font-size: 1.2rem;
+}
+
+#entre-contato {
+
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-left: -500px;
+
+}
+
+#contatar {
+    width: 55px;
+    height: 55px;
+
+}
+
+@media (max-width: 768px) {
+    .menu {
+        height: auto;
+        text-align: center;
+    }
+
+    .lista_menu li a {
+        padding: 5px;
+    }
+
+    #logo {
+
+        width: 150px;
+    }
+
+
+    .saibamais {
+        flex-direction: column;
+        margin: 20px 60px;
+        margin-top: 100px;
+        align-items: flex-end;
+    }
+
+    #fundo_saibamais {
+        text-align: center;
+    }
+
+    #fundo_mackbook {
+        align-items: center;
+
+    }
+
+    #macbook {
+        width: 300px;
+        margin-top: 60px;
+
+    }
+
+    #fazemoss {
+        margin-top: 50px;
+    }
+
+    .fazemos {
+        grid-template-columns: 1fr;
+        width: auto;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    .projetos {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        height: 90%;
+        ;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .container-contatos {
+        display: inline;
+        width: 100%;
+        padding: 20px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .separar {
+        margin: 0 auto;
+        flex-direction: column;
+
+    }
+
+    #contatos {
+        display: flex;
+        margin-bottom: 100px;
+
+    }
+
+    .container-contatos {
+        width: 85%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    #container-contato {
+        width: 83%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    #entre-contato {
+        margin: 0 auto;
+        text-align: center;
+        flex-direction: column;
+
+    }
+
+    #contatar {
+        width: 55px;
+        height: 55px;
+        margin-left: 20px;
+
+    }
+
+    .rodape {
+        font-size: 14px;
+        text-align: center;
+    }
+
+
+
+}
